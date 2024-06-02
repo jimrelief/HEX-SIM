@@ -1,0 +1,547 @@
+Microsoft Windows [版本 10.0.19045.4170]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\Users\asus\Desktop\mobius-sim\simulation>python test.py
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+
+
+====================================================
+******************* MOBIUS SIM *********************
+====================================================
+Parallelism:    COL
+==================   Package  ======================
+Number_of_CPU: 1
+Number_of_Conv_Chiplet:         2
+Number_of_SA_Chiplet:   3
+Number_of_HBM : 1
+Interconnect : GRS
+NOI_Bandwidth (GB/s/Chiplet): 100
+==================Chiplet_Conv======================
+Number_of_LAYER:        2
+Global_Buffer_Size (KB):        64
+Routers_per_Global_Buffer :     2
+NOC_Bandwidth (GB/s/PU): 68
+Core : RISC-V
+==================Chiplet_SA======================
+Number_of_LAYER:        2
+Global_Buffer_Size (KB):        64
+Routers_per_Global_Buffer:      2
+NOC_Bandwidth (GB/s/PU): 68
+Core : RISC-V
+==================   CNPU   ======================
+Array Size:     16x16
+SRAM IFMAP (KB):        32
+SRAM Filter (KB):       32
+SRAM OFMAP (KB):        32
+Dataflow:       ws
+Working in ESTIMATE BANDWIDTH mode.
+==================   SAPU   ======================
+Array Size:     32x32
+SRAM IFMAP (KB):        32
+SRAM Filter (KB):       32
+SRAM OFMAP (KB):        32
+Dataflow:       ws
+Working in ESTIMATE BANDWIDTH mode.
+====================================================
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+==========================================================
+Layer Number =   0
+Layer Name =     conv
+=================
+chip_filters_seg =       2
+chip_filters =   20
+pu_filters_seg =         6
+pu_filters =     3
+==========================================================
+==========================================================
+Layer Number =   1
+Layer Name =     mbconv1
+=================
+chip_filters_seg =       2
+chip_filters =   12
+pu_filters_seg =         6
+pu_filters =     2
+==========================================================
+==========================================================
+Layer Number =   2
+Layer Name =     mbconv6_1
+=================
+chip_filters_seg =       2
+chip_filters =   16
+pu_filters_seg =         6
+pu_filters =     2
+==========================================================
+==========================================================
+Layer Number =   3
+Layer Name =     mbconv6_2
+=================
+chip_filters_seg =       2
+chip_filters =   16
+pu_filters_seg =         6
+pu_filters =     2
+==========================================================
+==========================================================
+Layer Number =   4
+Layer Name =     mbconv6_1
+=================
+chip_filters_seg =       2
+chip_filters =   24
+pu_filters_seg =         6
+pu_filters =     4
+==========================================================
+==========================================================
+Layer Number =   5
+Layer Name =     mbconv6_2
+=================
+chip_filters_seg =       2
+chip_filters =   24
+pu_filters_seg =         6
+pu_filters =     4
+==========================================================
+==========================================================
+Layer Number =   6
+Layer Name =     mbconv6_1
+=================
+chip_filters_seg =       2
+chip_filters =   48
+pu_filters_seg =         6
+pu_filters =     8
+==========================================================
+==========================================================
+Layer Number =   7
+Layer Name =     mbconv6_2
+=================
+chip_filters_seg =       2
+chip_filters =   48
+pu_filters_seg =         6
+pu_filters =     8
+==========================================================
+==========================================================
+Layer Number =   8
+Layer Name =     mbconv6_3
+=================
+chip_filters_seg =       2
+chip_filters =   48
+pu_filters_seg =         6
+pu_filters =     8
+==========================================================
+==========================================================
+Layer Number =   9
+Layer Name =     mbconv6_1
+=================
+chip_filters_seg =       2
+chip_filters =   68
+pu_filters_seg =         6
+pu_filters =     11
+==========================================================
+==========================================================
+Layer Number =   10
+Layer Name =     mbconv6_2
+=================
+chip_filters_seg =       2
+chip_filters =   68
+pu_filters_seg =         6
+pu_filters =     11
+==========================================================
+==========================================================
+Layer Number =   11
+Layer Name =     mbconv6_3
+=================
+chip_filters_seg =       2
+chip_filters =   68
+pu_filters_seg =         6
+pu_filters =     11
+==========================================================
+==========================================================
+Layer Number =   12
+Layer Name =     mbconv6_1
+=================
+chip_filters_seg =       2
+chip_filters =   116
+pu_filters_seg =         6
+pu_filters =     19
+==========================================================
+==========================================================
+Layer Number =   13
+Layer Name =     mbconv6_2
+=================
+chip_filters_seg =       2
+chip_filters =   116
+pu_filters_seg =         6
+pu_filters =     19
+==========================================================
+==========================================================
+Layer Number =   14
+Layer Name =     mbconv6_3
+=================
+chip_filters_seg =       2
+chip_filters =   116
+pu_filters_seg =         6
+pu_filters =     19
+==========================================================
+==========================================================
+Layer Number =   15
+Layer Name =     mbconv6_4
+=================
+chip_filters_seg =       2
+chip_filters =   116
+pu_filters_seg =         6
+pu_filters =     19
+==========================================================
+==========================================================
+Layer Number =   16
+Layer Name =     mbconv6_1
+=================
+chip_filters_seg =       2
+chip_filters =   192
+pu_filters_seg =         6
+pu_filters =     32
+==========================================================
+==========================================================
+Layer Number =   17
+Layer Name =     fc
+=================
+chip_filters_seg =       2
+chip_filters =   768
+pu_filters_seg =         6
+pu_filters =     128
+==========================================================
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+==========================================================
+Layer Number =   0
+Layer Name =     Linear1
+=================
+chip_filters_seg =       2
+chip_filters =   2048
+pu_filters_seg =         6
+pu_filters =     341
+==========================================================
+==========================================================
+Layer Number =   1
+Layer Name =     QKT
+=================
+chip_filters_seg =       2
+chip_filters =   24
+pu_filters_seg =         6
+pu_filters =     4
+==========================================================
+==========================================================
+Layer Number =   2
+Layer Name =     QKTV
+=================
+chip_filters_seg =       2
+chip_filters =   256
+pu_filters_seg =         6
+pu_filters =     42
+==========================================================
+==========================================================
+Layer Number =   3
+Layer Name =     Linear2
+=================
+chip_filters_seg =       2
+chip_filters =   256
+pu_filters_seg =         6
+pu_filters =     42
+==========================================================
+==========================================================
+Layer Number =   4
+Layer Name =     mlp-FF-L1
+=================
+chip_filters_seg =       2
+chip_filters =   256
+pu_filters_seg =         6
+pu_filters =     42
+==========================================================
+==========================================================
+Layer Number =   5
+Layer Name =     mlp-FF-L2
+=================
+chip_filters_seg =       2
+chip_filters =   256
+pu_filters_seg =         6
+pu_filters =     42
+==========================================================
+===================CNPU SIMULATION BEGIN===================
+====================================================
+******************* SCALE SIM **********************
+====================================================
+Array Size:     16x16
+SRAM IFMAP (kB):        32
+SRAM Filter (kB):       32
+SRAM OFMAP (kB):        32
+Dataflow:       Weight Stationary
+CSV file path:  ../topologies/cnpu.csv
+Working in ESTIMATE BANDWIDTH mode.
+====================================================
+
+Running Layer 0
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 45092/45092 [00:06<00:00, 7109.96it/s]
+Compute cycles: 45091
+Stall cycles: 0
+Overall utilization: 15.79%
+Mapping efficiency: 15.82%
+Average IFMAP DRAM BW: 9.856 words/cycle
+Average Filter DRAM BW: 2.455 words/cycle
+Average OFMAP DRAM BW: 3.389 words/cycle
+
+Running Layer 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████| 279358/279358 [00:45<00:00, 6203.33it/s]
+Compute cycles: 279357
+Stall cycles: 0
+Overall utilization: 12.18%
+Mapping efficiency: 12.23%
+Average IFMAP DRAM BW: 15.552 words/cycle
+Average Filter DRAM BW: 7.273 words/cycle
+Average OFMAP DRAM BW: 2.045 words/cycle
+
+Running Layer 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 44548/44548 [00:06<00:00, 6939.15it/s]
+Compute cycles: 44547
+Stall cycles: 0
+Overall utilization: 11.88%
+Mapping efficiency: 12.05%
+Average IFMAP DRAM BW: 15.166 words/cycle
+Average Filter DRAM BW: 6.545 words/cycle
+Average OFMAP DRAM BW: 2.399 words/cycle
+
+Running Layer 3
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 44548/44548 [00:06<00:00, 7023.13it/s]
+Compute cycles: 44547
+Stall cycles: 0
+Overall utilization: 11.88%
+Mapping efficiency: 12.05%
+Average IFMAP DRAM BW: 15.166 words/cycle
+Average Filter DRAM BW: 6.545 words/cycle
+Average OFMAP DRAM BW: 2.399 words/cycle
+
+Running Layer 4
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 38750/38750 [00:05<00:00, 6745.41it/s]
+Compute cycles: 38749
+Stall cycles: 0
+Overall utilization: 23.52%
+Mapping efficiency: 25.00%
+Average IFMAP DRAM BW: 14.304 words/cycle
+Average Filter DRAM BW: 9.786 words/cycle
+Average OFMAP DRAM BW: 4.129 words/cycle
+
+Running Layer 5
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 38750/38750 [00:05<00:00, 6800.91it/s]
+Compute cycles: 38749
+Stall cycles: 0
+Overall utilization: 23.52%
+Mapping efficiency: 25.00%
+Average IFMAP DRAM BW: 14.304 words/cycle
+Average Filter DRAM BW: 9.786 words/cycle
+Average OFMAP DRAM BW: 4.129 words/cycle
+
+Running Layer 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 6534/6534 [00:00<00:00, 7238.98it/s]
+Compute cycles: 6533
+Stall cycles: 0
+Overall utilization: 40.50%
+Mapping efficiency: 50.00%
+Average IFMAP DRAM BW: 11.826 words/cycle
+Average Filter DRAM BW: 9.600 words/cycle
+Average OFMAP DRAM BW: 9.227 words/cycle
+
+Running Layer 7
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 6534/6534 [00:00<00:00, 7207.54it/s]
+Compute cycles: 6533
+Stall cycles: 0
+Overall utilization: 40.50%
+Mapping efficiency: 50.00%
+Average IFMAP DRAM BW: 11.826 words/cycle
+Average Filter DRAM BW: 9.600 words/cycle
+Average OFMAP DRAM BW: 9.227 words/cycle
+
+Running Layer 8
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 6534/6534 [00:00<00:00, 7344.19it/s]
+Compute cycles: 6533
+Stall cycles: 0
+Overall utilization: 40.50%
+Mapping efficiency: 50.00%
+Average IFMAP DRAM BW: 11.826 words/cycle
+Average Filter DRAM BW: 9.600 words/cycle
+Average OFMAP DRAM BW: 9.227 words/cycle
+
+Running Layer 9
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 21900/21900 [00:02<00:00, 7729.16it/s]
+Compute cycles: 21899
+Stall cycles: 0
+Overall utilization: 47.09%
+Mapping efficiency: 68.75%
+Average IFMAP DRAM BW: 2.070 words/cycle
+Average Filter DRAM BW: 1.750 words/cycle
+Average OFMAP DRAM BW: 8.332 words/cycle
+
+Running Layer 10
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 21900/21900 [00:02<00:00, 7762.04it/s]
+Compute cycles: 21899
+Stall cycles: 0
+Overall utilization: 47.09%
+Mapping efficiency: 68.75%
+Average IFMAP DRAM BW: 2.070 words/cycle
+Average Filter DRAM BW: 1.750 words/cycle
+Average OFMAP DRAM BW: 8.332 words/cycle
+
+Running Layer 11
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 21900/21900 [00:02<00:00, 7775.69it/s]
+Compute cycles: 21899
+Stall cycles: 0
+Overall utilization: 47.09%
+Mapping efficiency: 68.75%
+Average IFMAP DRAM BW: 2.070 words/cycle
+Average Filter DRAM BW: 1.750 words/cycle
+Average OFMAP DRAM BW: 8.332 words/cycle
+
+Running Layer 12
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 34932/34932 [00:03<00:00, 8882.93it/s]
+Compute cycles: 34931
+Stall cycles: 0
+Overall utilization: 26.01%
+Mapping efficiency: 59.24%
+Average IFMAP DRAM BW: 4.093 words/cycle
+Average Filter DRAM BW: 3.732 words/cycle
+Average OFMAP DRAM BW: 4.350 words/cycle
+
+Running Layer 13
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 34932/34932 [00:03<00:00, 8804.71it/s]
+Compute cycles: 34931
+Stall cycles: 0
+Overall utilization: 26.01%
+Mapping efficiency: 59.24%
+Average IFMAP DRAM BW: 4.093 words/cycle
+Average Filter DRAM BW: 3.732 words/cycle
+Average OFMAP DRAM BW: 4.350 words/cycle
+
+Running Layer 14
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 34932/34932 [00:03<00:00, 8771.64it/s]
+Compute cycles: 34931
+Stall cycles: 0
+Overall utilization: 26.01%
+Mapping efficiency: 59.24%
+Average IFMAP DRAM BW: 4.093 words/cycle
+Average Filter DRAM BW: 3.732 words/cycle
+Average OFMAP DRAM BW: 4.350 words/cycle
+
+Running Layer 15
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 34932/34932 [00:03<00:00, 8842.63it/s]
+Compute cycles: 34931
+Stall cycles: 0
+Overall utilization: 26.01%
+Mapping efficiency: 59.24%
+Average IFMAP DRAM BW: 4.093 words/cycle
+Average Filter DRAM BW: 3.732 words/cycle
+Average OFMAP DRAM BW: 4.350 words/cycle
+
+Running Layer 16
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 18602/18602 [00:02<00:00, 8707.62it/s]
+Compute cycles: 18601
+Stall cycles: 0
+Overall utilization: 35.08%
+Mapping efficiency: 99.62%
+Average IFMAP DRAM BW: 9.928 words/cycle
+Average Filter DRAM BW: 3.382 words/cycle
+Average OFMAP DRAM BW: 6.509 words/cycle
+
+Running Layer 17
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 18240/18240 [00:02<00:00, 7194.71it/s]
+Compute cycles: 18239
+Stall cycles: 0
+Overall utilization: 51.58%
+Mapping efficiency: 100.00%
+Average IFMAP DRAM BW: 7.742 words/cycle
+Average Filter DRAM BW: 2.484 words/cycle
+Average OFMAP DRAM BW: 9.152 words/cycle
+************ SCALE SIM Run Complete ****************
+=================== CNPU SIMULATION END ===================
+
+
+===================SAPU SIMULATION BEGIN===================
+====================================================
+******************* SCALE SIM **********************
+====================================================
+Array Size:     32x32
+SRAM IFMAP (kB):        32
+SRAM Filter (kB):       32
+SRAM OFMAP (kB):        32
+Dataflow:       Weight Stationary
+CSV file path:  ../topologies/sapu.csv
+Working in ESTIMATE BANDWIDTH mode.
+====================================================
+
+Running Layer 0
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 24992/24992 [00:04<00:00, 6105.99it/s]
+Compute cycles: 24991
+Stall cycles: 0
+Overall utilization: 32.75%
+Mapping efficiency: 96.88%
+Average IFMAP DRAM BW: 10.475 words/cycle
+Average Filter DRAM BW: 7.204 words/cycle
+Average OFMAP DRAM BW: 10.929 words/cycle
+
+Running Layer 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2272/2272 [00:00<00:00, 8795.68it/s]
+Compute cycles: 2271
+Stall cycles: 0
+Overall utilization: 4.23%
+Mapping efficiency: 12.50%
+Average IFMAP DRAM BW: 7.920 words/cycle
+Average Filter DRAM BW: 8.943 words/cycle
+Average OFMAP DRAM BW: 32.000 words/cycle
+
+Running Layer 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 568/568 [00:00<00:00, 9987.02it/s]
+Compute cycles: 567
+Stall cycles: 0
+Overall utilization: 16.67%
+Mapping efficiency: 49.22%
+Average IFMAP DRAM BW: 8.794 words/cycle
+Average Filter DRAM BW: 8.803 words/cycle
+Average OFMAP DRAM BW: 32.000 words/cycle
+
+Running Layer 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 4544/4544 [00:00<00:00, 7085.76it/s]
+Compute cycles: 4543
+Stall cycles: 0
+Overall utilization: 22.19%
+Mapping efficiency: 65.62%
+Average IFMAP DRAM BW: 8.052 words/cycle
+Average Filter DRAM BW: 5.663 words/cycle
+Average OFMAP DRAM BW: 9.199 words/cycle
+
+Running Layer 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 4544/4544 [00:00<00:00, 6977.36it/s]
+Compute cycles: 4543
+Stall cycles: 0
+Overall utilization: 22.19%
+Mapping efficiency: 65.62%
+Average IFMAP DRAM BW: 8.052 words/cycle
+Average Filter DRAM BW: 5.663 words/cycle
+Average OFMAP DRAM BW: 9.199 words/cycle
+
+Running Layer 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 4544/4544 [00:00<00:00, 6976.97it/s]
+Compute cycles: 4543
+Stall cycles: 0
+Overall utilization: 22.19%
+Mapping efficiency: 65.62%
+Average IFMAP DRAM BW: 8.052 words/cycle
+Average Filter DRAM BW: 5.663 words/cycle
+Average OFMAP DRAM BW: 9.199 words/cycle
+************ SCALE SIM Run Complete ****************
+=================== SAPU SIMULATION END ===================
+
+C:\Users\asus\Desktop\mobius-sim\simulation>

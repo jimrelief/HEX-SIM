@@ -1,0 +1,609 @@
+Microsoft Windows [版本 10.0.19045.4291]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\mobius-sim\simulation>python mem_test.py
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+
+
+====================================================
+******************* MOBIUS SIM *********************
+====================================================
+Parallelism:    ROW
+==================   Package  ======================
+Number_of_CPU: 1
+Number_of_Conv_Chiplet:         10
+Number_of_SA_Chiplet:   10
+Number_of_HBM : 1
+Interconnect : GRS
+NOI_Bandwidth (GB/s/Chiplet): 100
+==================Chiplet_Conv======================
+Number_of_LAYER:        4
+Global_Buffer_Size (KB):        28673
+Routers_per_Global_Buffer :     3
+NOC_Bandwidth (GB/s/PU): 68
+Core : RISC-V
+==================Chiplet_SA======================
+Number_of_LAYER:        4
+Global_Buffer_Size (KB):        28673
+Routers_per_Global_Buffer:      3
+NOC_Bandwidth (GB/s/PU): 68
+Core : RISC-V
+==================   CNPU   ======================
+Array Size:     256x256
+SRAM IFMAP (KB):        6144
+SRAM Filter (KB):       6144
+SRAM OFMAP (KB):        2048
+Dataflow:       ws
+Bandwidth:      10
+Working in USE USER BANDWIDTH mode.
+==================   SAPU   ======================
+Array Size:     512x512
+SRAM IFMAP (KB):        10000
+SRAM Filter (KB):       10000
+SRAM OFMAP (KB):        10000
+Dataflow:       ws
+Bandwidth:      50
+Working in USE USER BANDWIDTH mode.
+====================================================
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+==========================================================
+Layer Number =   0
+Layer Name =     conv
+=================
+chip_channels_seg =      10
+chip_channels =          2
+pu_channels_seg =        2
+pu_channels =    1
+==========================================================
+==========================================================
+Layer Number =   1
+Layer Name =     mbconv1
+=================
+chip_channels_seg =      10
+chip_channels =          36
+pu_channels_seg =        16
+pu_channels =    2
+==========================================================
+==========================================================
+Layer Number =   2
+Layer Name =     mbconv6_1
+=================
+chip_channels_seg =      10
+chip_channels =          21
+pu_channels_seg =        16
+pu_channels =    1
+==========================================================
+==========================================================
+Layer Number =   3
+Layer Name =     mbconv6_2
+=================
+chip_channels_seg =      10
+chip_channels =          21
+pu_channels_seg =        16
+pu_channels =    1
+==========================================================
+==========================================================
+Layer Number =   4
+Layer Name =     mbconv6_1
+=================
+chip_channels_seg =      10
+chip_channels =          80
+pu_channels_seg =        16
+pu_channels =    5
+==========================================================
+==========================================================
+Layer Number =   5
+Layer Name =     mbconv6_2
+=================
+chip_channels_seg =      10
+chip_channels =          80
+pu_channels_seg =        16
+pu_channels =    5
+==========================================================
+==========================================================
+Layer Number =   6
+Layer Name =     mbconv6_1
+=================
+chip_channels_seg =      10
+chip_channels =          43
+pu_channels_seg =        16
+pu_channels =    2
+==========================================================
+==========================================================
+Layer Number =   7
+Layer Name =     mbconv6_2
+=================
+chip_channels_seg =      10
+chip_channels =          43
+pu_channels_seg =        16
+pu_channels =    2
+==========================================================
+==========================================================
+Layer Number =   8
+Layer Name =     mbconv6_3
+=================
+chip_channels_seg =      10
+chip_channels =          43
+pu_channels_seg =        16
+pu_channels =    2
+==========================================================
+==========================================================
+Layer Number =   9
+Layer Name =     mbconv6_1
+=================
+chip_channels_seg =      10
+chip_channels =          240
+pu_channels_seg =        16
+pu_channels =    15
+==========================================================
+==========================================================
+Layer Number =   10
+Layer Name =     mbconv6_2
+=================
+chip_channels_seg =      10
+chip_channels =          240
+pu_channels_seg =        16
+pu_channels =    15
+==========================================================
+==========================================================
+Layer Number =   11
+Layer Name =     mbconv6_3
+=================
+chip_channels_seg =      10
+chip_channels =          240
+pu_channels_seg =        16
+pu_channels =    15
+==========================================================
+==========================================================
+Layer Number =   12
+Layer Name =     mbconv6_1
+=================
+chip_channels_seg =      10
+chip_channels =          340
+pu_channels_seg =        16
+pu_channels =    21
+==========================================================
+==========================================================
+Layer Number =   13
+Layer Name =     mbconv6_2
+=================
+chip_channels_seg =      10
+chip_channels =          340
+pu_channels_seg =        16
+pu_channels =    21
+==========================================================
+==========================================================
+Layer Number =   14
+Layer Name =     mbconv6_3
+=================
+chip_channels_seg =      10
+chip_channels =          340
+pu_channels_seg =        16
+pu_channels =    21
+==========================================================
+==========================================================
+Layer Number =   15
+Layer Name =     mbconv6_4
+=================
+chip_channels_seg =      10
+chip_channels =          340
+pu_channels_seg =        16
+pu_channels =    21
+==========================================================
+==========================================================
+Layer Number =   16
+Layer Name =     mbconv6_1
+=================
+chip_channels_seg =      10
+chip_channels =          208
+pu_channels_seg =        16
+pu_channels =    13
+==========================================================
+==========================================================
+Layer Number =   17
+Layer Name =     fc
+=================
+chip_channels_seg =      10
+chip_channels =          38
+pu_channels_seg =        16
+pu_channels =    2
+==========================================================
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+==========================================================
+Layer Number =   0
+Layer Name =     Linear1
+=================
+chip_channels_seg =      10
+chip_channels =          51
+pu_channels_seg =        16
+pu_channels =    3
+==========================================================
+==========================================================
+Layer Number =   1
+Layer Name =     QKT
+=================
+chip_channels_seg =      10
+chip_channels =          51
+pu_channels_seg =        16
+pu_channels =    3
+==========================================================
+==========================================================
+Layer Number =   2
+Layer Name =     QKTV
+=================
+chip_channels_seg =      10
+chip_channels =          4
+pu_channels_seg =        4
+pu_channels =    1
+==========================================================
+==========================================================
+Layer Number =   3
+Layer Name =     Linear2
+=================
+chip_channels_seg =      10
+chip_channels =          51
+pu_channels_seg =        16
+pu_channels =    3
+==========================================================
+==========================================================
+Layer Number =   4
+Layer Name =     mlp-FF-L1
+=================
+chip_channels_seg =      10
+chip_channels =          51
+pu_channels_seg =        16
+pu_channels =    3
+==========================================================
+==========================================================
+Layer Number =   5
+Layer Name =     mlp-FF-L2
+=================
+chip_channels_seg =      10
+chip_channels =          51
+pu_channels_seg =        16
+pu_channels =    3
+==========================================================
+===================CNPU SIMULATION BEGIN===================
+====================================================
+******************* SCALE SIM **********************
+====================================================
+Array Size:     256x256
+SRAM IFMAP (kB):        6144
+SRAM Filter (kB):       6144
+SRAM OFMAP (kB):        2048
+Dataflow:       Weight Stationary
+CSV file path:  ../topologies/cnpu.csv
+Bandwidth:      10
+Working in USE USER BANDWIDTH mode.
+====================================================
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+
+Running Layer 0
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 23567/23567 [00:06<00:00, 3574.99it/s]
+PU Compute cycles: 23566
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 0
+Write_lb_stall_clk: 0 Write_lb_clk: 2372
+Read_lb_stall_clk: 0 Read_lb_clk: 67142
+Write_gb_stall_clk: 2372 Write_gb_clk: 6664
+Read_gb_stall_clk: 0 Read_gb_clk: 57142
+
+Running Layer 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 13310/13310 [00:03<00:00, 4156.29it/s]
+PU Compute cycles: 13309
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 1
+Write_lb_stall_clk: 0 Write_lb_clk: 3828
+Read_lb_stall_clk: 0 Read_lb_clk: 2974
+Write_gb_stall_clk: 3828 Write_gb_clk: 31539
+Read_gb_stall_clk: 0 Read_gb_clk: 18438
+
+Running Layer 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4015/4015 [00:00<00:00, 4213.48it/s]
+PU Compute cycles: 4014
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 2
+Write_lb_stall_clk: 0 Write_lb_clk: 666
+Read_lb_stall_clk: 0 Read_lb_clk: 10563
+Write_gb_stall_clk: 666 Write_gb_clk: 5090
+Read_gb_stall_clk: 0 Read_gb_clk: 6371
+
+Running Layer 3
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4015/4015 [00:00<00:00, 4186.96it/s]
+PU Compute cycles: 4014
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 3
+Write_lb_stall_clk: 0 Write_lb_clk: 666
+Read_lb_stall_clk: 0 Read_lb_clk: 10563
+Write_gb_stall_clk: 666 Write_gb_clk: 5090
+Read_gb_stall_clk: 0 Read_gb_clk: 6371
+
+Running Layer 4
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1607/1607 [00:00<00:00, 4286.34it/s]
+PU Compute cycles: 1606
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 4
+Write_lb_stall_clk: 0 Write_lb_clk: 408
+Read_lb_stall_clk: 0 Read_lb_clk: 3683
+Write_gb_stall_clk: 408 Write_gb_clk: 4353
+Read_gb_stall_clk: 0 Read_gb_clk: 2221
+
+Running Layer 5
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1607/1607 [00:00<00:00, 4286.27it/s]
+PU Compute cycles: 1606
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 5
+Write_lb_stall_clk: 0 Write_lb_clk: 408
+Read_lb_stall_clk: 0 Read_lb_clk: 3683
+Write_gb_stall_clk: 408 Write_gb_clk: 4353
+Read_gb_stall_clk: 0 Read_gb_clk: 2221
+
+Running Layer 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 991/991 [00:00<00:00, 4531.47it/s]
+PU Compute cycles: 990
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 6
+Write_lb_stall_clk: 0 Write_lb_clk: 91
+Read_lb_stall_clk: 0 Read_lb_clk: 1980
+Write_gb_stall_clk: 91 Write_gb_clk: 906
+Read_gb_stall_clk: 0 Read_gb_clk: 1194
+
+Running Layer 7
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 991/991 [00:00<00:00, 4531.46it/s]
+PU Compute cycles: 990
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 7
+Write_lb_stall_clk: 0 Write_lb_clk: 91
+Read_lb_stall_clk: 0 Read_lb_clk: 1980
+Write_gb_stall_clk: 91 Write_gb_clk: 906
+Read_gb_stall_clk: 0 Read_gb_clk: 1194
+
+Running Layer 8
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 991/991 [00:00<00:00, 4531.56it/s]
+PU Compute cycles: 990
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 8
+Write_lb_stall_clk: 0 Write_lb_clk: 91
+Read_lb_stall_clk: 0 Read_lb_clk: 1980
+Write_gb_stall_clk: 91 Write_gb_clk: 906
+Read_gb_stall_clk: 0 Read_gb_clk: 1194
+
+Running Layer 9
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 962/962 [00:00<00:00, 4398.73it/s]
+PU Compute cycles: 961
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 9
+Write_lb_stall_clk: 0 Write_lb_clk: 371
+Read_lb_stall_clk: 0 Read_lb_clk: 1431
+Write_gb_stall_clk: 371 Write_gb_clk: 3966
+Read_gb_stall_clk: 0 Read_gb_clk: 863
+
+Running Layer 10
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 962/962 [00:00<00:00, 4398.88it/s]
+PU Compute cycles: 961
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 10
+Write_lb_stall_clk: 0 Write_lb_clk: 371
+Read_lb_stall_clk: 0 Read_lb_clk: 1431
+Write_gb_stall_clk: 371 Write_gb_clk: 3966
+Read_gb_stall_clk: 0 Read_gb_clk: 863
+
+Running Layer 11
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 962/962 [00:00<00:00, 4398.84it/s]
+PU Compute cycles: 961
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 11
+Write_lb_stall_clk: 0 Write_lb_clk: 371
+Read_lb_stall_clk: 0 Read_lb_clk: 1431
+Write_gb_stall_clk: 371 Write_gb_clk: 3966
+Read_gb_stall_clk: 0 Read_gb_clk: 863
+
+Running Layer 12
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 830/830 [00:00<00:00, 4831.12it/s]
+PU Compute cycles: 829
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 12
+Write_lb_stall_clk: 0 Write_lb_clk: 620
+Read_lb_stall_clk: 0 Read_lb_clk: 879
+Write_gb_stall_clk: 620 Write_gb_clk: 6405
+Read_gb_stall_clk: 0 Read_gb_clk: 530
+
+Running Layer 13
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 830/830 [00:00<00:00, 4830.23it/s]
+PU Compute cycles: 829
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 13
+Write_lb_stall_clk: 0 Write_lb_clk: 620
+Read_lb_stall_clk: 0 Read_lb_clk: 879
+Write_gb_stall_clk: 620 Write_gb_clk: 6405
+Read_gb_stall_clk: 0 Read_gb_clk: 530
+
+Running Layer 14
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 830/830 [00:00<00:00, 4830.24it/s]
+PU Compute cycles: 829
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 14
+Write_lb_stall_clk: 0 Write_lb_clk: 620
+Read_lb_stall_clk: 0 Read_lb_clk: 879
+Write_gb_stall_clk: 620 Write_gb_clk: 6405
+Read_gb_stall_clk: 0 Read_gb_clk: 530
+
+Running Layer 15
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 830/830 [00:00<00:00, 4829.29it/s]
+PU Compute cycles: 829
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 15
+Write_lb_stall_clk: 0 Write_lb_clk: 620
+Read_lb_stall_clk: 0 Read_lb_clk: 879
+Write_gb_stall_clk: 620 Write_gb_clk: 6405
+Read_gb_stall_clk: 0 Read_gb_clk: 530
+
+Running Layer 16
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1630/1630 [00:00<00:00, 4968.40it/s]
+PU Compute cycles: 1629
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 16
+Write_lb_stall_clk: 0 Write_lb_clk: 601
+Read_lb_stall_clk: 0 Read_lb_clk: 1010
+Write_gb_stall_clk: 601 Write_gb_clk: 6027
+Read_gb_stall_clk: 0 Read_gb_clk: 609
+
+Running Layer 17
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4890/4890 [00:01<00:00, 4815.91it/s]
+PU Compute cycles: 4889
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 10.000 words/cycle
+Average Filter DRAM BW: 10.000 words/cycle
+Layer 17
+Write_lb_stall_clk: 0 Write_lb_clk: 500
+Read_lb_stall_clk: 0 Read_lb_clk: 7922
+Write_gb_stall_clk: 500 Write_gb_clk: 4424
+Read_gb_stall_clk: 0 Read_gb_clk: 4778
+************ SCALE SIM Run Complete ****************
+=================== CNPU SIMULATION END ===================
+
+
+===================SAPU SIMULATION BEGIN===================
+====================================================
+******************* SCALE SIM **********************
+====================================================
+Array Size:     512x512
+SRAM IFMAP (kB):        10000
+SRAM Filter (kB):       10000
+SRAM OFMAP (kB):        10000
+Dataflow:       Weight Stationary
+CSV file path:  ../topologies/sapu.csv
+Bandwidth:      50
+Working in USE USER BANDWIDTH mode.
+====================================================
+
+
+Config file found
+Input file:../configs/test.cfg
+Loading
+
+Running Layer 0
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 208880/208880 [05:43<00:00, 608.97it/s]
+PU Compute cycles: 1758923
+PU Stall cycles: 1550044
+Average IFMAP DRAM BW: 50.000 words/cycle
+Average Filter DRAM BW: 50.000 words/cycle
+Layer 0
+Write_lb_stall_clk: 0 Write_lb_clk: 1744
+Read_lb_stall_clk: 0 Read_lb_clk: 20695
+Write_gb_stall_clk: 1744 Write_gb_clk: 15425
+Read_gb_stall_clk: 0 Read_gb_clk: 12483
+
+Running Layer 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26110/26110 [00:07<00:00, 3432.11it/s]
+PU Compute cycles: 26109
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 50.000 words/cycle
+Average Filter DRAM BW: 50.000 words/cycle
+Layer 1
+Write_lb_stall_clk: 0 Write_lb_clk: 40
+Read_lb_stall_clk: 0 Read_lb_clk: 242
+Write_gb_stall_clk: 40 Write_gb_clk: 356
+Read_gb_stall_clk: 0 Read_gb_clk: 146
+
+Running Layer 2
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3838/3838 [00:02<00:00, 1833.51it/s]
+PU Compute cycles: 3837
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 50.000 words/cycle
+Average Filter DRAM BW: 50.000 words/cycle
+Layer 2
+Write_lb_stall_clk: 0 Write_lb_clk: 58
+Read_lb_stall_clk: 0 Read_lb_clk: 2586
+Write_gb_stall_clk: 58 Write_gb_clk: 235
+Read_gb_stall_clk: 0 Read_gb_clk: 1560
+
+Running Layer 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26110/26110 [00:22<00:00, 1177.11it/s]
+PU Compute cycles: 26109
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 50.000 words/cycle
+Average Filter DRAM BW: 50.000 words/cycle
+Layer 3
+Write_lb_stall_clk: 0 Write_lb_clk: 235
+Read_lb_stall_clk: 0 Read_lb_clk: 2586
+Write_gb_stall_clk: 235 Write_gb_clk: 2083
+Read_gb_stall_clk: 0 Read_gb_clk: 1560
+
+Running Layer 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26110/26110 [00:22<00:00, 1173.76it/s]
+PU Compute cycles: 26109
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 50.000 words/cycle
+Average Filter DRAM BW: 50.000 words/cycle
+Layer 4
+Write_lb_stall_clk: 0 Write_lb_clk: 235
+Read_lb_stall_clk: 0 Read_lb_clk: 2586
+Write_gb_stall_clk: 235 Write_gb_clk: 2083
+Read_gb_stall_clk: 0 Read_gb_clk: 1560
+
+Running Layer 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26110/26110 [00:21<00:00, 1200.75it/s]
+PU Compute cycles: 26109
+PU Stall cycles: 0
+Average IFMAP DRAM BW: 50.000 words/cycle
+Average Filter DRAM BW: 50.000 words/cycle
+Layer 5
+Write_lb_stall_clk: 0 Write_lb_clk: 235
+Read_lb_stall_clk: 0 Read_lb_clk: 2586
+Write_gb_stall_clk: 235 Write_gb_clk: 2083
+Read_gb_stall_clk: 0 Read_gb_clk: 1560
+************ SCALE SIM Run Complete ****************
+=================== SAPU SIMULATION END ===================
+
+D:\mobius-sim\simulation>

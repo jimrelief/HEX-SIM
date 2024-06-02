@@ -1,0 +1,7 @@
+Layer name,IFMAP height,IFMAP width,Filter height,Filter width,Channels,Num filter,Stride height,Stride width,
+Linear1,1024,20,1,20,1,1600,1,1,
+QKT,1024,1,1,1,1,1024,1,1,
+QKTV,1024,12,1,12,1,64,1,1,
+Linear2,1024,20,1,20,1,1600,1,1,
+mlp-FF-L1,1024,20,1,20,1,3072,1,1,
+mlp-FF-L2,1024,38,1,38,1,1600,1,1,

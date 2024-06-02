@@ -1,0 +1,7 @@
+Layer name,Ifmap height,ifmap width,filter height,filter width,channels,num filters,strides,batch size
+Linear1,197,768,1,768,1,768,1,
+QKT,197,64,1,64,1,197,1,
+QKTV,197,197,1,197,1,64,1,
+Linear2,197,768,1,768,1,768,1,
+mlp-FF-L1,197,768,1,768,1,3072,1,
+mlp-FF-L2,197,3072,1,3072,1,768,1,
