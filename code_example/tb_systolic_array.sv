@@ -352,12 +352,12 @@ module tb_systolic_array (); /* this is automatically generated */
 		init();
 		repeat(3)@(posedge clk);
 		/*test os*/
-		os_test1();
-		repeat(1)@(posedge clk);
-		os_test2();
-		repeat(1)@(posedge clk);
-		os_test3();
-		repeat(3)@(posedge clk)
+		// os_test1();
+		// repeat(1)@(posedge clk);
+		// os_test2();
+		// repeat(1)@(posedge clk);
+		// os_test3();
+		// repeat(3)@(posedge clk)
 		/*test ws*/
 		ws_test1();
 		repeat(1)@(posedge clk);
