@@ -1,5 +1,5 @@
 //`include "./pe.v"
-
+//支持os，is，ws三种模式
 module systolic_array
 #(
     parameter ROWS = 32,

@@ -1,4 +1,4 @@
-
+//支持os ws is三种模式
 module pe 
 #(
     parameter WORD_SIZE = 16
